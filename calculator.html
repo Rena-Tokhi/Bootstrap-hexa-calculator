@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+		<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	<script>
+		function insert(num) {
+		document.form.textview.value = document.form.textview.value+num;
+
+		}
+		function clean(){
+			document.form.textview.value = "";
+		}
+		
+	</script>
+
+</head>
+</head>
+<body>
+	/
+	     <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">calculatro</a>
+            <button class="navbar-toggler text-white " data-toggle="collapse" data-target="#navbarNav">
+              <span class="navbar-toggler-icon  "></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white active mx-3" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link btn btn-primary text-white mx-3" href="calculator.html">Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white mx-3 " href="About.html">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+     <div class="container-fluid mt-5">
+        <div class="breadcrumb">
+            <li class="breadcrumb-item"><a class="link" href="home.html">Home</a></li>
+            <li class="breadcrumb-item active"><a class="link" href="calculator.html">Calculator</a></li>
+        </div>
+    </div>
+
+      <div class="container-fluid mt-4 ">
+      <div class="jumbotron">
+        <form class="row mx-2 jastify-content-center d-flex align-self-center  p-3">
+            <div class="row col-sm-6 mx-auto">
+                <div class="col form-group">
+                     <p class="font-weight-bold ">From Decimal :</p>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input class="form-check-input radio" type="radio" name="radio"> To Binary </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input class="form-check-input radio" type="radio" name="radio" >To octal</label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input class="form-check-input radio" type="radio" name="radio"> To Hexa </label>
+                        </div>
+                </div>
+
+                 <div class="col form-group">
+                    <p class="font-weight-bold ">From Binary :</p>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input class="form-check-input radio" type="radio" name="radio">To Decimal</label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input class="form-check-input radio" type="radio" name="radio">To octal </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input radio" type="radio" name="radio">To Hexa 
+                            </label>
+                        </div>
+                    </div>                              
+                </div>
+                               
+            <div class=" row col-sm-6 mx-auto">
+               <!-- input filed -->
+                <div class="col form-group">
+                    <p class="font-weight-bold ">From Octal :</p>
+                        <div class="form-check">
+                             <label class="form-check-label">
+                                <input class="form-check-input radio" type="radio" name="radio">To Decimal
+                             </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input radio" type="radio" name="radio">To Binary
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input radio" type="radio" name="radio" >To Hexa
+                            </label>
+                        </div>
+                </div>
+                      
+                <div class="col form-group">
+                    <p class=" font-weight-bold ">From Hexa:</p>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input radio" type="radio" name="radio">To Decimal
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input radio" type="radio" name="radio"> To octal
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input radio" type="radio" name="radio">To Binary
+                            </label>
+                       </div>
+                </div>                               
+            </div>
+        </form>
+
+        <div class="jastify-content-center mx-5">
+            <div class="col-sm-12 form-group">
+                <form name="form">
+			      <input class="textview form-control" name="textview">
+		        </form>
+            </div>
+        </div> 
+        <div class="mb-5 mr-5 ml-5 mt-2" >
+        	<div class="row my-2">
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block" type="button" value="A" onclick="insert(A)">
+        		</div>
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block" type="button" value="B" onclick="insert(B)">
+        		</div>
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block" type="button" value="C" onclick="insert(C)">
+        		</div>
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block" type="button" value="D" onclick="insert(D)">
+        		</div>
+        	</div>
+        	<div class="row my-2">
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block" type="button" value="E" onclick="insert(E)">
+        		</div>
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block" type="button" value="F" onclick="insert(F)">
+        		</div>
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block" type="button" value="0" onclick="insert(0)">				 		
+        		</div>
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block" type="button" value="1" onclick="insert(1)">
+        		</div>
+        	</div>
+        	<div class="row my-2">
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block" type="button" value="2" onclick="insert(2)">
+        		</div>
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block" type="button" value="3" onclick="insert(3)">		
+        		</div>
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block" type="button" value="4" onclick="insert(4)">
+        		</div>
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block" type="button" value="5" onclick="insert(5)">		
+        		</div>
+        	</div>
+        	<div class="row my-2">
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block" type="button" value="6" onclick="insert(6)">
+        		</div>
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block" type="button" value="7" onclick="insert(7)">
+        		</div>
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block" type="button" value="8" onclick="insert(8)">
+        		</div>
+        		<div class="col">
+        			<input class="button btn btn-primary btn-block"  type="button" value="9" onclick="insert(9)">
+        		</div>
+        	</div>
+        	<div class="row my-2">
+        		<div class="col">
+        			<button class="btn btn-primary text-uppercase btn-block ">CONVERT</button>
+        		</div>
+        		<div class="col col">
+        			<input class="button btn btn-primary text-uppercase btn-block" type="button" value="ClAER" onclick="clean()">
+        		</div>
+        	</div>
+        </div>	
+		
+				 				 		
+				 	
+				 				 		
+				 	
+			
+   
+
+        <p class="h4 text-primary mx-3 text-center text-uppercase border border-right-0 border-left-0 py-3 border-primary">instructions</p>
+
+        <div id="accrodion" role="tablist">
+        	<div class="card">
+        		<div class="card-header  bg-primary text-center text-white" role="tab" id="heading">
+        			<h5 class="mb-0 ">
+        				<a class="list list-unstyled text-white" href="#collapse1" data-parent="#accrodion" data-toggle="collapse"> Decimal to binary</a>
+        			</h5>
+        		</div>
+        		<div id="collapse1" class="collapse">
+        			<div class="card-body">
+        				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+         <div id="accrodion" role="tablist">
+        	<div class="card">
+        		<div class="card-header  bg-primary text-center text-white" role="tab" id="heading">
+        			<h5 class="mb-0 ">
+        				<a class="list list-unstyled text-white" href="#collapse2" data-parent="#accrodion" data-toggle="collapse">Decimal to Octal</a>
+        			</h5>
+        		</div>
+        		<div id="collapse2" class="collapse">
+        			<div class="card-body">
+        				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+         <div id="accrodion" role="tablist">
+        	<div class="card">
+        		<div class="card-header  bg-primary text-center text-white" role="tab" id="heading">
+        			<h5 class="mb-0 ">
+        				<a class="list list-unstyled text-white" href="#collapse3" data-parent="#accrodion" data-toggle="collapse"> Decimal to Hexadecimal</a>
+        			</h5>
+        		</div>
+        		<div id="collapse3" class="collapse">
+        			<div class="card-body">
+        				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+         <div id="accrodion" role="tablist">
+        	<div class="card">
+        		<div class="card-header  bg-primary text-center text-white" role="tab" id="heading">
+        			<h5 class="mb-0 ">
+        				<a class="list list-unstyled text-white" href="#collapse4" data-parent="#accrodion" data-toggle="collapse"> Decimal to binary</a>
+        			</h5>
+        		</div>
+        		<div id="collapse4" class="collapse">
+        			<div class="card-body">
+        				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+         <div id="accrodion" role="tablist">
+        	<div class="card">
+        		<div class="card-header  bg-primary text-center text-white" role="tab" id="heading">
+        			<h5 class="mb-0 ">
+        				<a class="list list-unstyled text-white" href="#collapse5" data-parent="#accrodion" data-toggle="collapse"> Binary to Octal</a>
+        			</h5>
+        		</div>
+        		<div id="collapse5" class="collapse">
+        			<div class="card-body">
+        				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+        <div id="accrodion" role="tablist">
+        	<div class="card">
+        		<div class="card-header  bg-primary text-center text-white" role="tab" id="heading">
+        			<h5 class="mb-0 ">
+        				<a class="list list-unstyled text-white" href="#collapse6" data-parent="#accrodion" data-toggle="collapse"> Binary to Hexadecimal</a>
+        			</h5>
+        		</div>
+        		<div id="collapse6" class="collapse">
+        			<div class="card-body">
+        				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+        <div id="accrodion" role="tablist">
+        	<div class="card">
+        		<div class="card-header  bg-primary text-center text-white" role="tab" id="heading">
+        			<h5 class="mb-0 ">
+        				<a class="list list-unstyled text-white" href="#collapse7" data-parent="#accrodion" data-toggle="collapse">Octal to Decimal</a>
+        			</h5>
+        		</div>
+        		<div id="collapse7" class="collapse">
+        			<div class="card-body">
+        				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+        <div id="accrodion" role="tablist">
+        	<div class="card">
+        		<div class="card-header  bg-primary text-center text-white" role="tab" id="heading">
+        			<h5 class="mb-0 ">
+        				<a class="list list-unstyled text-white" href="#collapse8" data-parent="#accrodion" data-toggle="collapse"> Decimal to binary</a>
+        			</h5>
+        		</div>
+        		<div id="collapse8" class="collapse">
+        			<div class="card-body">
+        				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+                 <div id="accrodion" role="tablist">
+        	<div class="card">
+        		<div class="card-header  bg-primary text-center text-white" role="tab" id="heading">
+        			<h5 class="mb-0 ">
+        				<a class="list list-unstyled text-white" href="#collapse9" data-parent="#accrodion" data-toggle="collapse"> Octal to Binary</a>
+        			</h5>
+        		</div>
+        		<div id="collapse9" class="collapse">
+        			<div class="card-body">
+        				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        			</div>
+        		</div>
+        	</div>
+        </div>
+    </div>
+    </div>
+                      
+   <footer>
+        <div class="container-fluid bg-primary  justify-content-center d-flex ">
+            <p class="text-light text-uppercase my-2 font-weight-bold">  copyright © 2020</p>
+        </div>
+    </footer>
+
+</body>
+</html>
